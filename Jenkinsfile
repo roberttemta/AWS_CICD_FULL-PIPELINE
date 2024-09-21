@@ -3,9 +3,9 @@
     agent any
 
    stages{
-    stage('git'){
+    stage('git Checkout'){
             steps{
-                sh 'echo build'
+                git branch: 'main', url: 'https://github.com/roberttemta/AWS_CICD_FULL-PIPELINE.git'
             }
         }
         stage('test'){
