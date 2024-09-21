@@ -3,7 +3,7 @@
     agent any
 
    stages{
-    stage('build'){
+    stage('git'){
             steps{
                 sh 'echo build'
             }
